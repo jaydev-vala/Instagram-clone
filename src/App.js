@@ -5,7 +5,7 @@ import ImageUpload from "./ImageUpload";
 import { db, auth } from "./firebase";
 import { Button, Avatar, makeStyles, Modal, Input } from "@material-ui/core";
 import FlipMove from "react-flip-move";
-import InstagramEmbed from "react-instagram-embed";
+//import InstagramEmbed from "react-instagram-embed";
 
 function getModalStyle() {
   const top = 50;
@@ -192,9 +192,9 @@ function App() {
             ))}
           </FlipMove>
         </div>
-        <div className="app__postsRight">
+        {/* <div className="app__postsRight">
           <InstagramEmbed
-            url="https://www.instagram.com/p/B_uf9dmAGPw/"
+            url="https://www.instagram.com/"
             maxWidth={320}
             hideCaption={false}
             containerTagName="div"
@@ -204,8 +204,8 @@ function App() {
             onSuccess={() => {}}
             onAfterRender={() => {}}
             onFailure={() => {}}
-          />
-        </div>
+          /> 
+            </div>*/}
       </div>
 
       {user?.displayName ? (
